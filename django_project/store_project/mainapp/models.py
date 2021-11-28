@@ -1,6 +1,18 @@
 from django.db import models
 
 
+class Category(models.Model):
+    class Meta:
+        verbose_name = 'категория'
+        verbose_name_plural = 'категории'
+
+    name = models.CharField(max_length=20, db_index=True, verbose_name='Название категории')
+    is_active = models.BooleanField('активность', default=True)
+
+    def __str__(self):
+        return f'{self.name}'
+
+
 class Goods(models.Model):
     class Meta:
         verbose_name = 'товар'
@@ -18,6 +30,8 @@ class Goods(models.Model):
     unit = models.CharField(verbose_name='Единица измерения валюты', max_length=6,
                             choices=UNIT_CHOICES, default=DEFAULT_UNIT)
     provider = models.CharField(max_length=300, verbose_name='Имя поставщика')
+    category = models.ManyToManyField(Category, verbose_name='Категория товара', related_name='category')
 
     def __str__(self):
-        return f'Товар {self.name} поставщик {self.provider} '
+        return f'Товар {self.name} поставщик {self.provider}'
+

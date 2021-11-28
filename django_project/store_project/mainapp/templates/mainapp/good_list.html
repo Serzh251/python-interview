@@ -10,12 +10,14 @@
             {% for good in object_list %}
                 <div class="col">
                     <div class="card shadow-sm">
-                        <div class="card-body main-img" height="170">
+                        <div class="card-body" height="170">
                             <h4 class="text-center">{{ good.name }}</h4>
                             <h4 class="text-center">{{ good.provider }}</h4>
                             <h6 class="text-center" >{{ good.price }} {{ good.unit }}</h6>
                         </div>
-{#                        <button action="#" class="btn btn-outline-success" type="submit" widht="100px">Добавить</button>#}
+                            {% for category in good.category.all %}
+                                <h6 class="text-center">{{ category }}</h6>
+                            {% endfor %}
                         <a href="#sidebar" class="btn btn-outline-success search-button" role="button" aria-controls="sidebar">
                             Добавить
                         </a>
