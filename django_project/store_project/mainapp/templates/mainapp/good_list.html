@@ -3,7 +3,7 @@
 {% block title %}{{ title|title }}{% endblock %}
 
 {% block content %}
-
+<h4 class="text-center">текущий сайт - {{ site }} </h4>
 <div class="album mt-5 mb-5">
     <div class="container">
         <div class="row row-cols-1 row-cols-sm-2 row-cols-md-4 g-3">
@@ -21,6 +21,7 @@
                         <a href="#sidebar" class="btn btn-outline-success search-button" role="button" aria-controls="sidebar">
                             Добавить
                         </a>
+
                     </div>
                 </div>
             {% endfor %}
