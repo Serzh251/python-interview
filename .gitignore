@@ -1,0 +1,17 @@
+
+.idea/inspectionProfiles/
+
+.idea/
+django_project/.idea
+django_project/venv
+django_project/store_project/mainapp/__pycache__/
+
+django_project/store_project/db.sqlite3
+
+django_project/store_project/mainapp/migrations/__pycache__/
+
+django_project/store_project/store_project/__pycache__/
+django_project/nginx/static
+
+django_project/store_project/static
+django_project/store_project/store_project/settings/__pycache__/
