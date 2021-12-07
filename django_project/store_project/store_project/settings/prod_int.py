@@ -1,6 +1,6 @@
 from .prod import *
 
-DEBUG = False
+DEBUG = True
 
 SITE_ID = 3
 SECRET_KEY = 'django-insecure-j%3ipx@rbmzckvn3osh-1j@8==h7w4yei0+75cx0uv4kyay+a8'

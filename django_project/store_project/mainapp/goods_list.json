@@ -1,0 +1,26 @@
+[
+    {
+        "name": "Наушники",
+        "manufactured": "Apple",
+        "price": "2000 usd",
+        "category_name": "Электроника"
+    },
+    {
+        "name": "IPhone",
+        "manufactured": "Apple",
+        "price": "2000 usd",
+        "category_name": "Телефоны"
+    },
+    {
+        "name": "IPhone10",
+        "manufactured": "Apple",
+        "price": "11111 rub",
+        "category_name": "Телефоны"
+    },
+    {
+        "name": "Tesla model S",
+        "manufactured": "Tesla company",
+        "price": "5555 rub",
+        "category_name": "автомобили"
+    }
+]
